@@ -1,6 +1,6 @@
 package net.anvian.visualizerbookshelf.networking;
 
-import net.anvian.visualizerbookshelf.BetterBookshelves;
+import net.anvian.visualizerbookshelf.BookshelfVisualizer;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.network.PacketByteBuf;
@@ -17,8 +17,8 @@ public class Networking {
             PacketByteBuf buf = PacketByteBufs.create();
             buf.writeBlockPos(pos);
 
-            for(ServerPlayerEntity player: BetterBookshelves.SERVER.getPlayerManager().getPlayerList()) {
-                ServerPlayNetworking.send(player, new Identifier(BetterBookshelves.MOD_ID, "update_block"), buf);
+            for(ServerPlayerEntity player: BookshelfVisualizer.SERVER.getPlayerManager().getPlayerList()) {
+                ServerPlayNetworking.send(player, new Identifier(BookshelfVisualizer.MOD_ID, "update_block"), buf);
             }
         });
     }
@@ -27,7 +27,7 @@ public class Networking {
         if(!initialized) {
             new Thread(() -> {
                 synchronized (SERVER_LOCK) {
-                    while (BetterBookshelves.SERVER == null) {
+                    while (BookshelfVisualizer.SERVER == null) {
                         try {
                             SERVER_LOCK.wait();
                         } catch (InterruptedException e) {

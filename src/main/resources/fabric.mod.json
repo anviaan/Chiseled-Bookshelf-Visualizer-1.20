@@ -23,10 +23,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "net.anvian.visualizerbookshelf.BetterBookshelvesClient"
+      "net.anvian.visualizerbookshelf.BookshelfVisualizerClient"
     ],
     "main": [
-      "net.anvian.visualizerbookshelf.BetterBookshelves"
+      "net.anvian.visualizerbookshelf.BookshelfVisualizer"
     ]
   },
   "mixins": [
