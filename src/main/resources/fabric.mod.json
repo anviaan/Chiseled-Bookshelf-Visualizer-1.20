@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "betterbookshelves",
+  "id": "visualbookshelves",
   "version": "${version}",
 
   "name": "Better Bookshelves",
@@ -30,9 +30,9 @@
     ]
   },
   "mixins": [
-    "betterbookshelves.mixins.json"
+    "visualbookshelves.mixins.json"
   ],
-  "accessWidener": "betterbookshelves.accesswidener",
+  "accessWidener": "visualbookshelves.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.22",
     "fabric": "*",

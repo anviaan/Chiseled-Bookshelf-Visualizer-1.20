@@ -14,7 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BetterBookshelvesClient implements ClientModInitializer {
-	public static final String MOD_ID = "betterbookshelves";
+	public static final String MOD_ID = "visualbookshelves";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
@@ -26,6 +26,6 @@ public class BetterBookshelvesClient implements ClientModInitializer {
 		HudRenderCallback.EVENT.register(InGameHudBookPreview::renderCrosshair);
 
 		ConfigManager.loadConfig();
-		LOGGER.info("BetterBookshelves Client Initialized");
+		LOGGER.info("Visual Chiseled Bookshelves Client Initialized");
 	}
 }
