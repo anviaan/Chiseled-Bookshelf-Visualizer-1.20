@@ -3,8 +3,8 @@
   "id": "visualbookshelves",
   "version": "${version}",
 
-  "name": "Visual Chiseled Bookshelves",
-  "description": "Shows the contents of the Chiseled bookshelves.",
+  "name": "Chiseled Bookshelf Visualizer",
+  "description": "Visually displays the contents of the chiseled Bookshelves.",
   "authors": [
     "Bawnorton"
   ],
