@@ -1,6 +1,5 @@
 package net.anvian.visualbookshelves;
 
-import net.anvian.visualbookshelves.config.ServerConfigManager;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.server.MinecraftServer;
 import org.slf4j.Logger;
@@ -13,7 +12,6 @@ public class BetterBookshelves implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ServerConfigManager.loadConfig();
 		LOGGER.info("Visual Chiseled Bookshelves Initialized");
 	}
 }

@@ -27,9 +27,6 @@
     ],
     "main": [
       "net.anvian.visualbookshelves.BetterBookshelves"
-    ],
-    "modmenu": [
-      "net.anvian.visualbookshelves.compat.client.modmenu.BetterBookshelvesModMenuApiImpl"
     ]
   },
   "mixins": [
@@ -41,13 +38,5 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17"
-  },
-  "suggests": {
-    "modmenu": ">=7.0.0",
-    "yet-another-config-lib": ">=3.0.0"
-  },
-  "custom": {
-    "modmenu": {
-    }
   }
 }

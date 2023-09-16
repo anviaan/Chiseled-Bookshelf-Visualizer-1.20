@@ -1,6 +1,5 @@
 package net.anvian.visualbookshelves;
 
-import net.anvian.visualbookshelves.config.client.ConfigManager;
 import net.anvian.visualbookshelves.networking.client.Networking;
 import net.anvian.visualbookshelves.render.InGameHudBookPreview;
 import net.fabricmc.api.ClientModInitializer;
@@ -18,7 +17,6 @@ public class BetterBookshelvesClient implements ClientModInitializer {
 
 		HudRenderCallback.EVENT.register(InGameHudBookPreview::renderCrosshair);
 
-		ConfigManager.loadConfig();
 		LOGGER.info("Visual Chiseled Bookshelves Client Initialized");
 	}
 }
