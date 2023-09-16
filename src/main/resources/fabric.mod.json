@@ -3,15 +3,18 @@
   "id": "visualbookshelves",
   "version": "${version}",
 
-  "name": "Better Bookshelves",
-  "description": "This is a mod that makes Chiseled Bookshelves in Minecraft more useful.",
+  "name": "Visual Chiseled Bookshelves",
+  "description": "Shows the contents of the Chiseled bookshelves.",
   "authors": [
     "Bawnorton"
   ],
+  "contributors" : [
+    "anvian"
+  ],
   "contact": {
-    "homepage": "https://bawnorton.com",
-    "sources": "https://github.com/Benjamin-Norton/BetterBookshelves",
-    "issues": "https://github.com/Benjamin-Norton/BetterBookshelves/issues"
+    "homepage": "https://modrinth.com/mod/visual-chiseled-bookshelves",
+    "sources": "https://github.com/anviaan/Visual-Chiseled-bookshelves",
+    "issues": "https://github.com/anviaan/Visual-Chiseled-bookshelves/issues"
   },
 
   "license": "MIT",
@@ -45,9 +48,6 @@
   },
   "custom": {
     "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.gg/jEGF5fb"
-      }
     }
   }
 }
