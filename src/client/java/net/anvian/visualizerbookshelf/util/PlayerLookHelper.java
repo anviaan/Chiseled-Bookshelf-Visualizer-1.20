@@ -1,6 +1,6 @@
-package net.anvian.visualbookshelves.util;
+package net.anvian.visualizerbookshelf.util;
 
-import net.anvian.visualbookshelves.mixin.ChiseledBookshelfBlockInvoker;
+import net.anvian.visualizerbookshelf.mixin.ChiseledBookshelfBlockInvoker;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.ChiseledBookshelfBlockEntity;
@@ -13,7 +13,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.minecraft.util.Pair;
 import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec2f;
 
 import java.util.ArrayList;

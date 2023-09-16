@@ -1,6 +1,6 @@
-package net.anvian.visualbookshelves.networking.client;
+package net.anvian.visualizerbookshelf.networking.client;
 
-import net.anvian.visualbookshelves.BetterBookshelves;
+import net.anvian.visualizerbookshelf.BetterBookshelves;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;

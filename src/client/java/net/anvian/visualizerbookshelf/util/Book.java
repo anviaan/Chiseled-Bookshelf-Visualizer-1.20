@@ -1,4 +1,4 @@
-package net.anvian.visualbookshelves.util;
+package net.anvian.visualizerbookshelf.util;
 
 public enum Book {
     TOP_LEFT(0, 5, 15, 8),

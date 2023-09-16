@@ -1,7 +1,7 @@
-package net.anvian.visualbookshelves.mixin;
+package net.anvian.visualizerbookshelf.mixin;
 
-import net.anvian.visualbookshelves.BetterBookshelves;
-import net.anvian.visualbookshelves.networking.Networking;
+import net.anvian.visualizerbookshelf.BetterBookshelves;
+import net.anvian.visualizerbookshelf.networking.Networking;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

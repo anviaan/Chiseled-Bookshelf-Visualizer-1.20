@@ -1,6 +1,6 @@
-package net.anvian.visualbookshelves.networking;
+package net.anvian.visualizerbookshelf.networking;
 
-import net.anvian.visualbookshelves.BetterBookshelves;
+import net.anvian.visualizerbookshelf.BetterBookshelves;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.network.PacketByteBuf;

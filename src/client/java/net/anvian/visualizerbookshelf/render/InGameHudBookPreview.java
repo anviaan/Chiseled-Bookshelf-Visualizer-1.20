@@ -1,6 +1,6 @@
-package net.anvian.visualbookshelves.render;
+package net.anvian.visualizerbookshelf.render;
 
-import net.anvian.visualbookshelves.util.PlayerLookHelper;
+import net.anvian.visualizerbookshelf.util.PlayerLookHelper;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;

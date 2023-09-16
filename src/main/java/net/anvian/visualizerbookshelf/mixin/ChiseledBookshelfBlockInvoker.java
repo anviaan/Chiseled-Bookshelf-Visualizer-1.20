@@ -1,4 +1,4 @@
-package net.anvian.visualbookshelves.mixin;
+package net.anvian.visualizerbookshelf.mixin;
 
 import net.minecraft.block.ChiseledBookshelfBlock;
 import net.minecraft.util.hit.BlockHitResult;

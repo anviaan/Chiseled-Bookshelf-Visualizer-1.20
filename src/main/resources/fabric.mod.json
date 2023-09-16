@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "visualbookshelves",
+  "id": "visualizerbookshelf",
   "version": "${version}",
 
   "name": "Chiseled Bookshelf Visualizer",
@@ -23,16 +23,16 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "net.anvian.visualbookshelves.BetterBookshelvesClient"
+      "net.anvian.visualizerbookshelf.BetterBookshelvesClient"
     ],
     "main": [
-      "net.anvian.visualbookshelves.BetterBookshelves"
+      "net.anvian.visualizerbookshelf.BetterBookshelves"
     ]
   },
   "mixins": [
-    "visualbookshelves.mixins.json"
+    "visualizerbookshelf.mixins.json"
   ],
-  "accessWidener": "visualbookshelves.accesswidener",
+  "accessWidener": "visualizerbookshelf.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.22",
     "fabric": "*",

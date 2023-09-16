@@ -1,6 +1,6 @@
-package net.anvian.visualbookshelves.mixin;
+package net.anvian.visualizerbookshelf.mixin;
 
-import net.anvian.visualbookshelves.networking.Networking;
+import net.anvian.visualizerbookshelf.networking.Networking;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
