@@ -20,13 +20,13 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.bawnorton.betterbookshelves.BetterBookshelvesClient"
+      "net.anvian.visualbookshelves.BetterBookshelvesClient"
     ],
     "main": [
-      "com.bawnorton.betterbookshelves.BetterBookshelves"
+      "net.anvian.visualbookshelves.BetterBookshelves"
     ],
     "modmenu": [
-      "com.bawnorton.betterbookshelves.compat.client.modmenu.BetterBookshelvesModMenuApiImpl"
+      "net.anvian.visualbookshelves.compat.client.modmenu.BetterBookshelvesModMenuApiImpl"
     ]
   },
   "mixins": [
