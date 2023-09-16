@@ -22,13 +22,6 @@ import java.util.Map;
 import java.util.Optional;
 
 public abstract class PlayerLookHelper {
-    /**
-     * Gets the book and itemstack that the player is looking at using {@link net.minecraft.block.ChiseledBookshelfBlock#getHitPos(BlockHitResult, Direction) ChiseledBookshelfBlock#getHitPos(BlockHitResult, Direction)} and {@link net.minecraft.block.ChiseledBookshelfBlock#getSlotForHitPos(Vec2f) ChiseledBookshelfBlock#getSlotForHitPos(Vec2f)}
-     *
-     * @param blockEntity the chiseled bookshelf block entity, fetched from world if null
-     * @return the book and itemstack that the player is looking at
-     */
-    @SuppressWarnings("JavadocReference")
     public static Pair<Book, ItemStack> getLookingAtBook(ChiseledBookshelfBlockEntity blockEntity) {
         Pair<Book, ItemStack> book = new Pair<>(Book.NONE, ItemStack.EMPTY);
         MinecraftClient client = MinecraftClient.getInstance();
