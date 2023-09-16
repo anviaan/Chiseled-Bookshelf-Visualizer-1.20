@@ -12,9 +12,9 @@
     "anvian"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/visual-chiseled-bookshelves",
-    "sources": "https://github.com/anviaan/Visual-Chiseled-bookshelves",
-    "issues": "https://github.com/anviaan/Visual-Chiseled-bookshelves/issues"
+    "homepage": "https://modrinth.com/mod/chiseled-bookshelf-visualizer",
+    "sources": "https://github.com/anviaan/Chiseled-Bookshelf-Visualizer",
+    "issues": "https://github.com/anviaan/Chiseled-Bookshelf-Visualizer/issues"
   },
 
   "license": "MIT",
