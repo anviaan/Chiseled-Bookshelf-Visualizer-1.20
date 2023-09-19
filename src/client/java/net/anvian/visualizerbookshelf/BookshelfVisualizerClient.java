@@ -1,5 +1,6 @@
 package net.anvian.visualizerbookshelf;
 
+import net.anvian.visualizerbookshelf.event.KeyInput;
 import net.anvian.visualizerbookshelf.networking.client.Networking;
 import net.anvian.visualizerbookshelf.render.InGameHudBookPreview;
 import net.fabricmc.api.ClientModInitializer;
@@ -14,6 +15,7 @@ public class BookshelfVisualizerClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		Networking.init();
+		KeyInput.register();
 
 		HudRenderCallback.EVENT.register(InGameHudBookPreview::renderCrosshair);
 
