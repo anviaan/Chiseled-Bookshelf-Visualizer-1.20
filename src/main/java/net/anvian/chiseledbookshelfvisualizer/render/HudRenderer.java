@@ -36,7 +36,7 @@ public class HudRenderer {
             if (storedComponets != null) {
                 int i = 20;
                 for (RegistryEntry<Enchantment> enchantment : storedComponets.getEnchantments()) {
-                    context.drawCenteredTextWithShadow(client.textRenderer, enchantment.value().description(), x, y + i, 0xFFC4C4C4);
+                    context.drawCenteredTextWithShadow(client.textRenderer, enchantment.value().description(), x, y + i, 0xFFCECECE);
                     i += 10;
                 }
             }
@@ -44,7 +44,7 @@ public class HudRenderer {
             var writtenBookContentComponent = itemStack.getComponents().get(DataComponentTypes.WRITTEN_BOOK_CONTENT);
 
             if (writtenBookContentComponent != null) {
-                context.drawCenteredTextWithShadow(client.textRenderer, Text.translatable("book.byAuthor", writtenBookContentComponent.author()), x, y + 20, 0xFFFFFFFF);
+                context.drawCenteredTextWithShadow(client.textRenderer, Text.translatable("book.byAuthor", writtenBookContentComponent.author()), x, y + 20, 0xFFCECECE);
             }
 
         }
