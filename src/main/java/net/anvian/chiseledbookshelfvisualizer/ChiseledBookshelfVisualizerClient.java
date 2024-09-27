@@ -4,6 +4,7 @@ import net.anvian.chiseledbookshelfvisualizer.data.BookData;
 import net.anvian.chiseledbookshelfvisualizer.data.BookShelfData;
 import net.anvian.chiseledbookshelfvisualizer.network.BookShelfInventoryPayload;
 import net.anvian.chiseledbookshelfvisualizer.network.ModCheckPayload;
+import net.anvian.chiseledbookshelfvisualizer.util.KeyInput;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -19,6 +20,8 @@ public class ChiseledBookshelfVisualizerClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        KeyInput.register();
+
         ClientPlayNetworking.registerGlobalReceiver(BookShelfInventoryPayload.ID,
                 ((payload, context) ->
                         context.client().execute(() ->{
@@ -36,7 +39,7 @@ public class ChiseledBookshelfVisualizerClient implements ClientModInitializer {
 
         ClientPlayNetworking.registerGlobalReceiver(ModCheckPayload.ID,
                 (payload, context) -> context.client().execute(() ->{
-                    ChiseledBookshelfVisualizer.LOGGER.info("[bookshelfinspector] Connected to server");
+                    ChiseledBookshelfVisualizer.LOGGER.info("[ChiseledBookshelfVisualizer] Connected to server");
                     modAvailable = true;
                 }));
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) ->  modAvailable = false);
