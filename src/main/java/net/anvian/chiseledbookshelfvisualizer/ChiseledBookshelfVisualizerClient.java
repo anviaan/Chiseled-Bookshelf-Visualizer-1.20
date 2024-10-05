@@ -1,5 +1,6 @@
 package net.anvian.chiseledbookshelfvisualizer;
 
+import net.anvian.chiseledbookshelfvisualizer.config.*;
 import net.anvian.chiseledbookshelfvisualizer.data.BookData;
 import net.anvian.chiseledbookshelfvisualizer.data.BookShelfData;
 import net.anvian.chiseledbookshelfvisualizer.network.BookShelfInventoryPayload;
@@ -17,9 +18,12 @@ public class ChiseledBookshelfVisualizerClient implements ClientModInitializer {
     public static BookData currentBookData = BookData.empty();
     public static BookShelfData bookShelfData = new BookShelfData();
     public static boolean modAvailable = false;
+    public static ChiseledBookshelfVisualizerConfig CONFIG;
 
     @Override
     public void onInitializeClient() {
+        CONFIG = ChiseledBookshelfVisualizerConfig.load();
+
         KeyInput.register();
 
         ClientPlayNetworking.registerGlobalReceiver(BookShelfInventoryPayload.ID,
